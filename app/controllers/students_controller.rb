@@ -5,7 +5,7 @@ class StudentsController < ApplicationController
     end
 
     def grades
-        students = Student.order(grade: :dsec)
+        students = Student.order(grade: :desc)
         render json: students
     end
 
